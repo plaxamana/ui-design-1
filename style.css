@@ -10,8 +10,10 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(stoplight.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) ), url(stoplight.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .container::before {
@@ -28,7 +30,7 @@ body {
 }
 
 .container {
-    padding: 4em;
+    padding: 1.125em;
     opacity: .8;
 }
 
@@ -42,6 +44,15 @@ p {
     margin-top: .5em;
 }
 
+@media (min-width: 500px) {
+  body {
+    background-position: initial;
+  }
+
+  .container {
+    padding: 4em;
+  }
+}
 
 /*
 
